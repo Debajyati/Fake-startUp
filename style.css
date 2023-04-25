@@ -1,50 +1,69 @@
-body, html{
-	height: 100%;
-	width: 100%;
-	font-family: 'montserrat', sans-serif;
-	color: darkorange;
-	background: url(HD_Laptop_image.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "montserrat", sans-serif;
+  color: darkorange;
+  background: url(HD_Laptop_image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  /*font size property doesn't work on css file if using latest edition bootstrap*/
+  text-shadow: #fc0 1px 0 10px;
+  cursor: pointer;
+}
 
-}
-h1{
-	text-align: center;
-	/*font size property doesn't work on css file if using latest edition bootstrap*/
-	text-shadow: #FC0 1px 0 10px;
-	cursor: pointer;
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container1{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .btn-lg.round {
-	border-radius: 25px;
-}
-.btn{
-	text-transform: uppercase;
+  border-radius: 25px;
 }
 
-.btn:hover{
-	background-color: #ee4b08;
-	color: black;
-	width: 250px;
-	height: 50px;
-	border-radius: 30px;
+.btn {
+  text-transform: uppercase;
 }
 
-.container{
-    justify-content: center;
-    max-width: 200px;
+/* old code */
+/* .btn:hover {
+  background-color: #ee4b08;
+  color: black;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+} */
+
+.anim-bg-gradient {
+  padding: 0.6em 1.2em;
+  border-radius: 0.375em;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(120deg, #3c6973, #68a694, #c1d9ba, #d9c1b4);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s;
 }
-.buffer{
-	height: 140px;
+
+.anim-bg-gradient:hover {
+  background-position: 0 0;
+  color: rgb(255, 255, 255);
 }
-hr{
-	border-color: black;
-	opacity: 100%;
+
+.container {
+  justify-content: center;
+  max-width: 200px;
+}
+.buffer {
+  height: 140px;
+}
+hr {
+  border-color: black;
+  opacity: 100%;
 }
